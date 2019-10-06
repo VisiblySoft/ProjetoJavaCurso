@@ -45,6 +45,18 @@ public class Program {
 		 sellerDao.insert(newseller);
 		 
 		 System.out.println("Registro inserido = "+ newseller.getId());
+		 
+		 
+         System.out.println("\n=== Teste 5 update ===");
+		 
+		 seller = sellerDao.findbyid(12);
+		 
+		 seller.setBaseSalary(5000.0);
+		 
+		 sellerDao.update(seller);
+		 
+	     System.out.println("Registro atualizado!");
+	
 	
 	}
 }
